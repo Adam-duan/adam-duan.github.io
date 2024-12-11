@@ -1,0 +1,261 @@
+<head>
+    <title>Zheng-Peng Duan</title>
+    <meta name="author" content="Zheng-Peng Duan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Zheng-Peng Duan">
+	<meta property="og:description" content="PhD student, Nankai University">
+    <meta property="og:image" content="/assets/dzp.jpg">
+	<meta property="og:url" content="https://adamduan.github.io/">
+	<meta name="twitter:card" content="summary_large_image">
+    <!-- <link rel="apple-touch-icon" href="/assets/paper_teaser/ucsd-logo.png"> -->
+    <!-- <link rel="icon" type="image/png" href="/assets/paper_teaser/ucsd-logo.png"> -->
+    <!-- <link rel="manifest" href="/assets/paper_teaser/site.webmanifest"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- <div class="navbar">
+    <a href="#about">About</a>
+    <a href="#news">News</a>
+    <a href="#publications">Publications</a>
+    <a href="#experiences">Experiences</a>
+    <a href="#contact">Contact</a>
+</div> -->
+
+<div class="header noselect" id="about">
+    <div class="content row">
+        <div class="header-profile-picture"></div>
+        <div class="header-text">
+            <div class="header-name">
+                <h1>Zheng-Peng Duan</h1>
+            </div>
+            <div class="header-subtitle">
+                PhD student, Nankai University
+            </div>
+            <div class="header-links">
+                <a class="btn" href="#contact">Email</a> /
+                <a class="btn" href="https://scholar.google.com/citations?user=S_v3euQAAAAJ&hl=zh-CN">Google Scholar</a> /
+                <a class="btn" href="https://github.com/Adam-duan">GitHub</a>
+                <!-- <a class="btn" href="">CV</a> -->
+            </div>
+            <div>
+                <p>
+                    Zheng-Peng Duan (段正鹏) is a PhD student at <a href="https://en.nankai.edu.cn/">Nankai University</a>, advised by Prof. <a href="https://li-chongyi.github.io/">Chongyi Li</a> and Prof. <a href="https://mmcheng.net/">Ming-Ming Cheng</a>. 
+                    His research interests include computer vision, especially focusing on image restoration & interactive editing.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content" style="padding-bottom: 64px;">
+    <!-- News -->
+    <div id="news">
+        <h2 class="noselect">News</h2>
+        <div class="news-container">
+            <ul class="news-list noselect">
+                <li class="news-item">2024/12 -- Three papers got accepted by AAAI 2025.</li>
+                <li class="news-item">2024/10 -- One paper got accepted by NeurIPS 2024.</li>
+                <li class="news-item">2024/07 -- Excited to announce one paper accepted by ICME 2024 was selected as <span class="bold">Best Paper Candidate</span>!</li>
+                <li class="news-item">2024/04 -- One paper got accepted by ICME 2024 and selected as <span class="bold">oral presentation</span>.</li>
+                <li class="news-item">2023/02 -- One paper got accepted by CVPR 2023.</li>
+                <li class="news-item">2022/07 -- One paper got accepted by ACMMM 2022 and selected as <span class="bold">oral presentation</span>.</li>
+                <li class="news-item">2022/03 -- One paper got accepted by CVPR 2022 and selected as <span class="bold">oral presentation</span>.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Publications -->
+    <div id="publications">
+        <h2 class="noselect">Publications <span style="font-size: 12px; color: #666;">(click to sort: 
+            <a class="btn" id="sort-date" onclick="sortPublications('date')">date</a> / 
+            <a class="btn active" id="sort-author" onclick="sortPublications('author')">first author</a>)</span></h2>
+        <p>* Equal contribution. </p>
+        <div class="publication row clearfix" data-author="Zheng-Peng Duan" data-date="202412">
+            <div class="row-media" style="height: 110px;">
+                <div id="diffoom_images" onmouseout="diffoom_stop()" onmouseover="diffoom_start()"><img style="height: 110px; width: 160px; position: absolute;" src="/assets/paper_teaser/diffoom_before.png"></div>
+                <img style="height: 100%; width: 100%;" src="/assets/paper_teaser/diffoom_after.png">
+            </div>
+            <script type="text/javascript">
+                function diffoom_stop() {
+                  document.getElementById('diffoom_images').style.opacity = "1";
+                }
+                diffoom_stop()
+                function diffoom_start() {
+                  document.getElementById('diffoom_images').style.opacity = "0";
+                }
+              </script>
+            <div class="row-text">
+                <a class="publication-title bold" >A Diffusion-Based Framework for Occluded Object Movement</a><br/>
+                <span class="bold">Zheng-Peng Duan</span>, Jiawei Zhang, Siyu Liu, Zheng Lin, Chunle Guo, Dongqing Zou, Jimmy Ren, Chongyi Li. <br/>
+                <span class="italic"><a href="https://aaai.org/conference/aaai/aaai-25/">AAAI</a></span>, 2025 <br/>
+                <a class="btn btn-red">paper</a> / <a class="btn btn-dark" href="bibtex/duan2024diffoom.html">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix" data-author="Zheng-Peng Duan" data-date="202412">
+            <div class="row-media" style="height: 100px; background-image: url(/assets/paper_teaser/diffretouch_teaser.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2407.03757">DiffRetouch: Using Diffusion to Retouch on the Shoulder of Experts</a><br/>
+                <span class="bold">Zheng-Peng Duan</span>, Jiawei zhang, Zheng Lin, Xin Jin, Dongqing Zou, Chunle Guo, Chongyi Li. <br/>
+                <span class="italic"><a href="https://aaai.org/conference/aaai/aaai-25/">AAAI</a></span>, 2025 <br/>
+                <a class="btn btn-red" href="https://arxiv.org/abs/2407.03757">paper</a> / <a class="btn btn-dark" href="bibtex/duan2024diffretouch.html">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix" data-author="Siyu Liu" data-date="202412">
+            <div class="row-media" style="height: 110px; background-image: url(/assets/paper_teaser/faceme_teaser.png);"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="https://arxiv.org/abs/2407.03757">FaceMe: Robust Blind Face Restoration With Personal Identification</a><br/>
+                Siyu Liu*, <span class="bold">Zheng-Peng Duan</span>*, Jia OuYang, Jiayi Fu, Hyunhee Park, Zikun Liu, Chunle Guo, Chongyi Li. <br/>
+                <span class="italic"><a href="https://aaai.org/conference/aaai/aaai-25/">AAAI</a></span>, 2025 <br/>
+                <a class="btn btn-red">paper</a> / <a class="btn btn-dark" href="bibtex/liu2024faceme.html">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix" data-author="Xin Jin" data-date="202405">
+            <div class="row-media" style="height: 120px; background-image: url(/assets/paper_teaser/le3d.gif); background-color: black;"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="/projects/le3d">Lighting Every Darkness with 3DGS: Fast Training and Real-Time Rendering for HDR View Synthesis</a><br/>
+                <span class="bold">Xin Jin</span>*, Pengyi Jiao*, Zheng-Peng Duan, Xingchao Yang, Chongyi Li, Chun-Le Guo#, Bo Ren.<br/>
+                <span class="italic"><a href="https://nips.cc/Conferences/2024">NeurIPS</a></span>, 2024 <br/>
+                <a class="btn btn-dark" href="/projects/le3d">project</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2406.06216">paper</a> / <a class="btn btn-dark" href="https://github.com/Srameo/LE3D">code</a> / <a class="btn btn-dark" href="bibtex/jin2024le3d.html">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix" data-author="Zheng Lin" data-date="202403">
+            <div class="row-media" style="height: 100px; background-image: url(/assets/paper_teaser/saq_teaser.png); background-color: black;"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="/projects/le3d">No-Reference Segmentation Annotation Quality Assessment</a><br/>
+                Zheng Lin, <span class="bold">Zheng-Peng Duan</span>, Xuying Zhang, Luojun Lin.<br/>
+                <span class="italic"><a href="https://2024.ieeeicme.org/">ICME</a></span>, 2024, (<span style="color: #f09228;">Oral, Best Paper Candidate</span>) <br/>
+                <a class="btn btn-red" href="https://ieeexplore.ieee.org/abstract/document/10688235">paper</a> / <a class="btn btn-dark" href="https://github.com/frazerlin/SAQ">code</a> / <a class="btn btn-dark" href="bibtex/lin2024saq.html">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix" data-author="Ruiqi Wu" data-date="202303">
+            <div class="row-media" style="height: 100px; background-image: url(/assets/paper_teaser/ridcp_teaser.gif); background-color: black;"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="/projects/le3d">RIDCP: Revitalizing Real Image Dehazing via High-Quality Codebook Priors</a><br/>
+                Rui-Qi Wu, <span class="bold">Zheng-Peng Duan</span>, Chun-Le Guo, Zhi Chai, Chong-Yi Li.<br/>
+                <span class="italic"><a href="https://cvpr.thecvf.com/Conferences/2023">CVPR</a></span>, 2023 <br/>
+                <a class="btn btn-red" href="https://rq-wu.github.io/projects/RIDCP/index.html">project</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2304.03994">paper</a> / <a class="btn btn-dark" href="https://github.com/RQ-Wu/RIDCP_dehazing">code</a> / <a class="btn btn-dark" href="bibtex/wu2023ridcp.html">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix" data-author="Zheng Lin" data-date="202207">
+            <div class="row-media" style="height: 120px; background-image: url(/assets/paper_teaser/knifecut_teaser.jpg); background-color: black;"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="/projects/le3d">KnifeCut: Refining Thin Part Segmentation with Cutting Lines</a><br/>
+                Zheng Lin*, <span class="bold">Zheng-Peng Duan</span>*, Zhao Zhang, Chun-Le Guo, Ming-Ming Cheng.<br/>
+                <span class="italic"><a href="https://2022.acmmm.org/">ACMMM</a></span>, 2022, (<span style="color: #f09228;">Oral</span>) <br/>
+                <a class="btn btn-red" href="https://dl.acm.org/doi/10.1145/3503161.3547803">paper</a> / <a class="btn btn-dark" href="bibtex/lin2022knifecut.html">bibtex</a>
+            </div>
+        </div>
+        <div class="publication row clearfix" data-author="Zheng Lin" data-date="202203">
+            <div class="row-media" style="height: 120px; background-image: url(/assets/paper_teaser/focuscut_teaser.jpg); background-color: black;"></div>
+            <div class="row-text">
+                <a class="publication-title bold" href="/projects/le3d">FocusCut: Diving into a Focus View in Interactive Segmentation</a><br/>
+                Zheng Lin, <span class="bold">Zheng-Peng Duan</span>, Zhao Zhang, Chun-Le Guo, Ming-Ming Cheng.<br/>
+                <span class="italic"><a href="https://cvpr.thecvf.com/Conferences/2022">CVPR</a></span>, 2022, (<span style="color: #f09228;">Oral</span>) <br/>
+                <a class="btn btn-red" href="https://github.com/frazerlin/focuscut">code</a> / <a class="btn btn-red" href="https://openaccess.thecvf.com/content/CVPR2022/papers/Lin_FocusCut_Diving_Into_a_Focus_View_in_Interactive_Segmentation_CVPR_2022_paper.pdf">paper</a> / <a class="btn btn-dark" href="bibtex/lin2022focuscut.html">bibtex</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Experience -->
+    <div id="experiences">
+        <h2 class="noselect">Experience</h2>
+        <div class="timeline noselect">
+            <div class="timeline-item">
+                <table>
+                    <tr>
+                        <td class="icon">
+                            <a href="https://www.sensetime.com/cn">
+                            <img src="/assets/experience/sensetime.png" alt="sensetime"></a><br>
+                            <br>
+                            2023/06 - 2024/12 <br> Shenzhen, China</span>
+                        </td>
+                        <td class="description">
+                            <h4><b>Research Intern</b></h4>
+                            <p style="font-size: 13px;">Worked closely with <a href="https://sites.google.com/site/zhjw1988">Jiawei Zhang</a>, Dongqing Zou, and Jimmy Ren.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Awards -->
+    <div>
+        <h2 class="noselect">Competitions and Awards</h2>
+        <ul class="noselect">
+            <li style="margin-bottom: 8px;">Top 20 Undergraduate Excellence Award, 2022.</li>
+            <li style="margin-bottom: 8px;">MCM/ICM, Mathematical Contest in Modeling, INFORMS Award Outstanding Winner, 2020.</li>
+            <li style="margin-bottom: 8px;">Chinese National Scholarship, 2019.</li>
+        </ul>
+    </div>
+
+    <!-- Education -->
+    <div>
+        <h2 class="noselect">Education</h2>
+        <div  class="noselect">
+            <span><strong>2022/09 - Present</strong>, I am a Ph.D student at <a href="https://cc.nankai.edu.cn/">College of Computer Science, Nankai University</a>, under the supervision of Prof. <a href="https://li-chongyi.github.io/">Chongyi Li</a> and Prof. <a href="https://mmcheng.net/">Ming-Ming Cheng</a>.</span>
+            <br/><br/>
+            <span><strong>2018/09 - 2022/07</strong>, I was an undergraduate student at <a href="https://see.xidian.edu.cn/">School off Electronic Engineering, Xidian University</a>, under the supervision of Prof. <a href="https://web.xidian.edu.cn/nnwang/index.html">Nannan Wang</a>.</span>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="noselect">
+        <a id="contact"></a>
+        <h2>Contact</h2>
+        You are very welcome to contact me regarding my research. I typically respond within a few days.<br/>
+        I can be contacted directly at <span class="bold">adamduan0211</span> [at] <span class="bold">gmail.com</span>.
+    </div>
+</div>
+
+<div id="footer-clusrmaps" style="text-align: center; margin-bottom: 20px;">
+    <div id="clustrmaps-widget" style="width: 100px; margin: 0 auto; overflow: hidden;">
+        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=nlSICpnL-0hvum-TytLZ_nYEqZp0D4H5r2XiOv_YUsE"></script>
+    </div>
+</div>
+
+<div class="footer noselect">
+    <div class="footer-content">
+        &copy; 2024 Zheng-Peng Duan. Acknowledgement to the template provided by <a style="color: white; text-decoration: underline;" href="https://nicklashansen.github.io">Nicklas Hansen</a>, but currently has been modified a lot by <a style="color: white; text-decoration: underline;" href="https://srameo.github.io">Xin Jin</a>.
+    </div>
+</div>
+
+<script>
+function sortPublications(criteria) {
+    const container = document.getElementById('publications');
+    const publications = Array.from(container.getElementsByClassName('publication'));
+
+    publications.sort((a, b) => {
+        if (criteria === 'author') {
+            if (a.getAttribute('data-author') === 'Zheng-Peng Duan' && b.getAttribute('data-author') !== 'Zheng-Peng Duan') {
+                return -1;
+            } else if (a.getAttribute('data-author') !== 'Zheng-Peng Duan' && b.getAttribute('data-author') === 'Zheng-Peng Duan') {
+                return 1;
+            } else {
+                return b.getAttribute('data-date') - a.getAttribute('data-date');
+            }
+        } else if (criteria === 'date') {
+            return b.getAttribute('data-date') - a.getAttribute('data-date');
+        }
+    });
+
+    publications.forEach(pub => {
+        container.appendChild(pub);
+        // Add gray overlay to non-first-author publications
+        if (criteria === 'author' && pub.getAttribute('data-author') !== 'Zheng-Peng Duan') {
+            pub.classList.add('gray-overlay');
+        } else {
+            pub.classList.remove('gray-overlay');
+        }
+    });
+
+    // Toggle active class
+    document.getElementById('sort-author').classList.toggle('active', criteria === 'author');
+    document.getElementById('sort-date').classList.toggle('active', criteria === 'date');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    sortPublications('date');
+});
+</script>
