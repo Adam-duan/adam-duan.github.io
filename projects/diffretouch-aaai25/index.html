@@ -54,16 +54,15 @@
     <div style="width: 100%;">
         <!-- Title -->
         <div class="root-content" style="padding-top: 30px;">
-            <name>A Diffusion-Based Framework for <br> Occluded Object Movement</name>
+            <name>DiffRetouch: Using Diffusion to Retouch <br> on the Shoulder of Experts</name>
             <br>
             <div id="author-list"">
                 <a href="https://adam-duan.github.io">Zheng-Peng Duan</a><sup>1,2</sup>&nbsp;&nbsp;&nbsp;
                 <a href="https://sites.google.com/site/zhjw1988">Jiawei Zhang</a><sup>2</sup>&nbsp;&nbsp;&nbsp;
-                Siyu Liu<sup>1</sup>&nbsp;&nbsp;&nbsp;
                 <a href="https://lin-zheng.com/">Zheng Lin</a><sup>4</sup>&nbsp;&nbsp;&nbsp;
-                <a href="https://mmcheng.net/clguo/">Chun-Le Guo</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+                <a href="https://srameo.github.io/">Xin Jin</a><sup>2</sup>&nbsp;&nbsp;&nbsp;
                 <a href="https://sites.google.com/view/dongqingzou/">Dongqing Zou</a><sup>2,3</sup>&nbsp;&nbsp;&nbsp;
-                <a href="https://www.jimmyren.com/">Jimmy S. Ren</a><sup>2</sup>&nbsp;&nbsp;&nbsp; <br>
+                <a href="https://mmcheng.net/clguo/">Chun-Le Guo</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
                 <a href="https://li-chongyi.github.io/">Chong-Yi Li</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
             </div>
             <div id="institution-list">
@@ -77,12 +76,21 @@
             </p>
             <div id="button-list">
                 <span class="link-button">
+                    <a class="link-button-content", href="https://arxiv.org/abs/2407.03757", target="_blank">
+                        <span>
+                            <svg class="svg-inline--fa fa-file-pdf fa-w-12" style="position: relative; top: 0.15em;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg>
+                        </span>
+                        &nbsp;
+                        Paper (Arxiv)
+                    </a>
+                </span>
+                <span class="link-button">
                     <a class="link-button-content", target="_blank">
                         <span>
                             <svg class="svg-inline--fa fa-file-pdf fa-w-12" style="position: relative; top: 0.15em;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg>
                         </span>
                         &nbsp;
-                        Paper (TBD)
+                        Paper (Official)
                     </a>
                 </span>
                 <span class="link-button">
@@ -107,217 +115,45 @@
         </div>
 
 
-        <!-- Visual Results -->
-        <div style="background-color: #f5f5f5; margin-right: auto; margin-left: auto;">
-            <div class="root-content" style="padding-top: 10px;">
-                <h1 class="section-name">&#128293;Results</h1>
-                <p class="section-content-text">
-                    <p style="font-size: large;"> Put your mouse &#128433 on the image to reveal our results! </p>
-                </p>
-                
-                <div style="width: 100%; display: inline-block;">
-                <center>
-                <div style="margin: 17px; width: 30%; float: left; ">
-                    <!-- The after image is last -->
-                    <div id="pos11_images" onmouseout="pos11_stop()" onmouseover="pos11_start()" style="float: left;">
-                    <img style="width: 300px; position: absolute;" src="./assets/results/COCO_train2014_000000007890_0/COCO_train2014_000000007890_0_before.jpg"> </div>
-                    <div style="float: left;">
-                    <img style="width: 300px;" src="./assets/results/COCO_train2014_000000007890_0/COCO_train2014_000000007890_0_after.jpg"></div>
-                </div>   
-                <script type="text/javascript">
-                    function pos11_stop() {
-                      document.getElementById('pos11_images').style.opacity = "1";
-                    }
-                    pos11_stop()
-                    function pos11_start() {
-                      document.getElementById('pos11_images').style.opacity = "0";
-                    }
-                </script>
-                </center>
-                <center>
-                    <div style="margin: 17px; width: 30%; float: left; ">
-                        <!-- The after image is last -->
-                        <div id="pos12_images" onmouseout="pos12_stop()" onmouseover="pos12_start()" style="float: left;">
-                        <img style="width: 300px; position: absolute;" src="./assets/results/COCO_train2014_000000019955_0/COCO_train2014_000000019955_0_before.jpg"> </div>
-                        <div style="float: left;">
-                        <img style="width: 300px;" src="./assets/results/COCO_train2014_000000019955_0/COCO_train2014_000000019955_0_after.jpg"></div>
-                    </div>   
-                    <script type="text/javascript">
-                        function pos12_stop() {
-                          document.getElementById('pos12_images').style.opacity = "1";
-                        }
-                        pos12_stop()
-                        function pos12_start() {
-                          document.getElementById('pos12_images').style.opacity = "0";
-                        }
-                    </script>
-                    </center>
-
-                    <center>
-                        <div style="margin: 17px; width: 30%; float: left; ">
-                            <!-- The after image is last -->
-                            <div id="pos13_images" onmouseout="pos13_stop()" onmouseover="pos13_start()" style="float: left;">
-                            <img style="width: 300px; position: absolute;" src="./assets/results/COCO_train2014_000000102144_0/COCO_train2014_000000102144_0_before.jpg"> </div>
-                            <div style="float: left;">
-                            <img style="width: 300px;" src="./assets/results/COCO_train2014_000000102144_0/COCO_train2014_000000102144_0_after.jpg"></div>
-                        </div>   
-                        <script type="text/javascript">
-                            function pos13_stop() {
-                              document.getElementById('pos13_images').style.opacity = "1";
-                            }
-                            pos13_stop()
-                            function pos13_start() {
-                              document.getElementById('pos13_images').style.opacity = "0";
-                            }
-                        </script>
-                        </center><br/>
-                <center>
-                <div style="margin: 17px; width: 30%; float: left; ">
-                    <!-- The after image is last -->
-                    <div id="pos21_images" onmouseout="pos21_stop()" onmouseover="pos21_start()" style="float: left;">
-                    <img style="width: 300px; position: absolute;" src="./assets/results/COCO_train2014_000000420524_0/COCO_train2014_000000420524_0_before.jpg"> </div>
-                    <div style="float: left;">
-                    <img style="width: 300px;" src="./assets/results/COCO_train2014_000000420524_0/COCO_train2014_000000420524_0_after.jpg"></div>
-                </div>   
-                <script type="text/javascript">
-                    function pos21_stop() {
-                      document.getElementById('pos21_images').style.opacity = "1";
-                    }
-                    pos21_stop()
-                    function pos21_start() {
-                      document.getElementById('pos21_images').style.opacity = "0";
-                    }
-                </script>
-                </center>
-                <center>
-                    <div style="margin: 17px; width: 30%; float: left; ">
-                        <!-- The after image is last -->
-                        <div id="pos22_images" onmouseout="pos22_stop()" onmouseover="pos22_start()" style="float: left;">
-                        <img style="width: 300px; position: absolute;" src="./assets/results/COCO_train2014_000000450160_0/COCO_train2014_000000450160_0_before.jpg"> </div>
-                        <div style="float: left;">
-                        <img style="width: 300px;" src="./assets/results/COCO_train2014_000000450160_0/COCO_train2014_000000450160_0_after.jpg"></div>
-                    </div>   
-                    <script type="text/javascript">
-                        function pos22_stop() {
-                          document.getElementById('pos22_images').style.opacity = "1";
-                        }
-                        pos22_stop()
-                        function pos22_start() {
-                          document.getElementById('pos22_images').style.opacity = "0";
-                        }
-                    </script>
-                    </center>
-
-                    <center>
-                        <div style="margin: 17px; width: 30%; float: left; ">
-                            <!-- The after image is last -->
-                            <div id="pos23_images" onmouseout="pos23_stop()" onmouseover="pos23_start()" style="float: left;">
-                            <img style="width: 300px; position: absolute;" src="./assets/results/COCO_val2014_000000094607_0/COCO_val2014_000000094607_0_before.jpg"> </div>
-                            <div style="float: left;">
-                            <img style="width: 300px;" src="./assets/results/COCO_val2014_000000094607_0/COCO_val2014_000000094607_1_after.jpg"></div>
-                        </div>   
-                        <script type="text/javascript">
-                            function pos23_stop() {
-                              document.getElementById('pos23_images').style.opacity = "1";
-                            }
-                            pos23_stop()
-                            function pos23_start() {
-                              document.getElementById('pos23_images').style.opacity = "0";
-                            }
-                        </script>
-                </center><br/>
-
-                <center>
-                    <div style="margin: 17px; width: 30%; float: left; ">
-                        <!-- The after image is last -->
-                        <div id="pos31_images" onmouseout="pos31_stop()" onmouseover="pos31_start()" style="float: left;">
-                        <img style="width: 300px; position: absolute;" src="./assets/results/COCO_val2014_000000121745_0/COCO_val2014_000000121745_0_before.jpg"> </div>
-                        <div style="float: left;">
-                        <img style="width: 300px;" src="./assets/results/COCO_val2014_000000121745_0/COCO_val2014_000000121745_0_after.jpg"></div>
-                    </div>   
-                    <script type="text/javascript">
-                        function pos31_stop() {
-                          document.getElementById('pos31_images').style.opacity = "1";
-                        }
-                        pos31_stop()
-                        function pos31_start() {
-                          document.getElementById('pos31_images').style.opacity = "0";
-                        }
-                    </script>
-                    </center>
-                    <center>
-                        <div style="margin: 17px; width: 30%; float: left; ">
-                            <!-- The after image is last -->
-                            <div id="pos32_images" onmouseout="pos32_stop()" onmouseover="pos32_start()" style="float: left;">
-                            <img style="width: 300px; position: absolute;" src="./assets/results/COCO_val2014_000000249046_0/COCO_val2014_000000249046_0_before.jpg"> </div>
-                            <div style="float: left;">
-                            <img style="width: 300px;" src="./assets/results/COCO_val2014_000000249046_0/COCO_val2014_000000249046_0_after.jpg"></div>
-                        </div>   
-                        <script type="text/javascript">
-                            function pos32_stop() {
-                              document.getElementById('pos32_images').style.opacity = "1";
-                            }
-                            pos32_stop()
-                            function pos32_start() {
-                              document.getElementById('pos32_images').style.opacity = "0";
-                            }
-                        </script>
-                        </center>
-    
-                        <center>
-                            <div style="margin: 17px; width: 30%; float: left; ">
-                                <!-- The after image is last -->
-                                <div id="pos33_images" onmouseout="pos33_stop()" onmouseover="pos33_start()" style="float: left;">
-                                <img style="width: 300px; position: absolute;" src="./assets/results/COCO_val2014_000000325277_0/COCO_val2014_000000325277_0_before.jpg"> </div>
-                                <div style="float: left;">
-                                <img style="width: 300px;" src="./assets/results/COCO_val2014_000000325277_0/COCO_val2014_000000325277_0_after.jpg"></div>
-                            </div>   
-                            <script type="text/javascript">
-                                function pos33_stop() {
-                                  document.getElementById('pos33_images').style.opacity = "1";
-                                }
-                                pos33_stop()
-                                function pos33_start() {
-                                  document.getElementById('pos33_images').style.opacity = "0";
-                                }
-                            </script>
-                    </center><br/>
-                
-                </div>
-
-            </div>
-        </div>
 
         <!-- Paper Information -->
         <div class="root-content" style="padding-top: 30px;">
             <div class="section-content">
+                <center><img src="assets/paper/teaser.png" width="600"/></center>
+                <p class="section-content-text">
+                    Our DiffRetouch utilizes the excellent distribution modeling ability of diffusion to capture the complex fine-retouched distribution covering various visual-pleasing styles. <br>
+                    <strong style="color: brown;">Note</strong>: Regardless of how the coefficients are adjusted within the specified range, the final result tends to be sampled from the learned fine-tuned distribution.<br/>
+                </p>
+            
+            <br/><br/>
+            <div class="section-content">
             <h1 class="section-name"> Abstract </h1>
                 <p class="section-content-text">
-                    Seamlessly moving objects within a scene is a common requirement for image editing, but it is still a challenge for existing editing methods. The main difficulty is the occluded portion needs to be completed before movement. To leverage the real-world knowledge embedded in the pre-trained diffusion models, we propose a diffusion-based framework specifically designed for occluded object movement, which consists of two parallel branches that perform object deocclusion and movement simultaneously. The deocclusion branch utilizes a background color-fill strategy and a continuously updated object mask to focus the diffusion process on completing the obscured portion of the target object. Concurrently, the movement branch employs latent optimization to place the completed object in the target location and adopts local text-conditioned guidance to appropriately integrate the object into new surroundings. Extensive evaluation using different metrics demonstrates the superior performance of our methods, which is further affirmed by a user study. The code will be made available to the community.
+                    Image retouching aims to enhance the visual quality of photos. Considering the different aesthetic preferences of users, the target of retouching is subjective. However, current retouching methods mostly adopt deterministic models, which not only neglects the style diversity in the expert-retouched results and tends to learn an average style during training, but also lacks sample diversity during inference. In this paper, we propose a diffusion-based method, named DiffRetouch. Thanks to the excellent distribution modeling ability of diffusion, our method can capture the complex fine-retouched distribution covering various visual-pleasing styles in the training data. Moreover, four image attributes are made adjustable to provide a user-friendly editing mechanism. By adjusting these attributes in specified ranges, users are allowed to customize preferred styles within the learned fine-retouched distribution. Additionally, the affine bilateral grid and contrastive learning scheme are introduced to handle the problem of texture distortion and control insensitivity respectively. Extensive experiments have demonstrated the superior performance of our method on visually appealing and sample diversity.
                 </p>
             </div>
 
             <div style="padding-top: 20px;">
                 <h1 class="section-name">Method</h1>
-                <center><img src="assets/paper/framework_v5.png" style="width: 100%; height:100%"/></center>
+                <center><img src="assets/paper/framework.png" style="width: 100%; height:100%"/></center>
                 <p class="section-content-text">
-                    Overview of our method (a) and LoRA tuning process (b). <br>
-                    (a) We decouple the task of occluded object movement into deocclusion and movement, handled by parallel branches. Both branches are built upon Stable Diffusion and operate simultaneously. The deocclusion branch leverages the prior knowledge within the diffusion models to complete the occluded portion, while the movement branch majorly places the restored object at the target position. <br>
-                    (b) To ensure the content generated by the deocclusion branch aligns with the characteristics of the target object, we equip this branch with LoRA, which is fine-tuned using a masked diffusion loss that applies exclusively to the visible portions of the object.
+                    <br>
+                    Pipeline of our DiffRetouch. <br>
+                    (a) We propose a diffusion-based retouching method, to cover the fine-retouched distribution, along with four adjustable attributes to edit the final results. <br>
+                    (b) The bilateral grid is introduced into the diffusion model to overcome the texture
+                    distortion caused by the information loss in the encoding and decoding process. <br>
+                    (c) To address the control insensitivity, we design the contrastive learning scheme to
+                    encourage models more aware of the adjustment brought by each coefficient. <br>
                 </p>
             </div>
 
             <div style="padding-top: 20px;">
                 <h1 class="section-name">
-                    Integration with other Methods
+                    Results
                 </h1>
-                <center><img src="assets/paper/masa_drag_v2.png" height="500"></center>
-                <p class="section-content-text">
-                    <br>
-                    Our dual-branch framework allows for the decomposition of the object from its background, enabling focused edits directly on the object. The deocclusion branch is compatible with most existing editing methods, enhancing their ability to perform precise edits in complex scenes. The main advantages of our framework in enhancing these methods are: <br>
-                    (1) In scenarios with multiple similar objects, our framework allows for the editing of a specific object without affecting others.<br>
-                    (2) By isolating the object from a complex background, our method permits more precise control over the object.
-                </p>
+                <center><img src="assets/results/adobe_results.png" ></center>
+                <br/><br/>
+                <center><img src="assets/results/ppr_results.png" ></center>
             </div>
 
             <!-- <div style="padding-top: 20px;">
@@ -332,9 +168,9 @@
                 <a name="bib"></a>
                 <pre style="margin-top: 5px;" class="bibtex">
 <code>
-@inproceedings{duan2025diffoom,
-    title={A Diffusion-Based Framework for Occluded Object Movement},
-    author={Duan, Zheng-Peng and Zhang, Jiawei and Liu, Siyu and Lin, Zheng and Guo, Chun-Le and Zou, Dongqing and Ren, Jimmy and Li, Chongyi},
+@inproceedings{duan2024diffretouch,
+    title={DiffRetouch: Using Diffusion to Retouch on the Shoulder of Experts},
+    author={Duan, Zheng-Peng and Zhang, Jiawei and Lin, Zheng and Jin, Xin and Wang, Xundong and Zou, Dongqing and Guo, Chunle and Li, Chongyi},
     journal={AAAI},
     year={2025}
 }</code>
